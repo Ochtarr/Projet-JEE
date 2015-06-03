@@ -1,0 +1,33 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MVCDemo</display-name>
+   <servlet>
+    <description></description>
+    <display-name>Index</display-name>
+    <servlet-name>Index</servlet-name>
+    <servlet-class>module.servlet.Index</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>InsertUser</display-name>
+    <servlet-name>InsertUser</servlet-name>
+    <servlet-class>module.servlet.InsertUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>UpdateUser</display-name>
+    <servlet-name>UpdateUser</servlet-name>
+    <servlet-class>module.servlet.UpdateUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Index</servlet-name>
+    <url-pattern>/myJavaFramework/Index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertUser</servlet-name>
+    <url-pattern>/myJavaFramework/InsertUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateUser</servlet-name>
+    <url-pattern>/myJavaFramework/UpdateUser</url-pattern>
+  </servlet-mapping>
+</web-app>
